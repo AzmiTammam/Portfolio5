@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azmi Portfolio">
+    <title>Azmi</title>
+    <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="17x17">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.documentElement.setAttribute("data-theme", "light");
+
+            // Get our button switcher
+            var themeSwitcher = document.getElementById("theme-switcher");
+
+            // When our button gets clicked
+            themeSwitcher.onclick = function () {
+                // Get the current selected theme, on the first run
+                // it should be `light`
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+
+                // Switch between `dark` and `light`
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+                // Set our currenet theme to the new one
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+        });
+    </script>
+</head>
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <div id="particles-js"></div>
+    <div class="overlay"></div>
+    <div id="preloader"></div>
+    
+    <header>
+        <div class="container">
+            <a id="button"></a>
+            <!-- Navbar -->
+            <nav class="navbar">
+
+                <a href="." class="logo"><span>Azmi</span> Tammam</a>
+                <br>
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="." class="nav-links">About</a>
+                    </li>
+                    <li>
+                        <a href="./#resume" data-page="resume" class="nav-links">Resume</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="nav-links">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:azmitammam@gmail.com" data-page="contact" class="nav-links">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" data-page="contact" class="nav-links" id="theme-switcher">DarkMode</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Navbar -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading-custom mt-5">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="project">
+                        <a href="#">
+                            <img src="./images/projects/Mobile.png" width="450px" alt="project image click here">
+                        </a>
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                    </div>
+                </div>
+
+<!--                 <div class="col-lg-3 col-sm-6">
+                    <div class="project">
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="project">
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="project">
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                        <a href="#">
+                            <img src="./images/project.png" width="265px" alt="project image click here">
+                        </a>
+                    </div>
+                </div> -->
+
+                
+        </div>
+
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="https://twitter.com/Azzmmii" rel="noreferrer" alt="link for social" target="_blank">
+                            <input type="button" class="btn" value="Twitter">
+                        </a>
+                        <a href="https://www.linkedin.com/in/azzmmii/" rel="noreferrer" atalt="link for social"
+                            target="_blank">
+                            <input type="button" class="btn" value="Linkedin">
+                        </a>
+                        <a href="https://github.com/AzmiTammam" rel="noreferrer" alt talt="link for social"
+                            target="_blank">
+                            <input type="button" class="btn" value="Github">
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <p class="text-right">© 2020 All rights reserved. Azmi.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </header>
+
+
+
+
+
+
+
+    <script src="./assest/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/695389b5b3.js" crossorigin="anonymous"></script>
+    <script src="./assest/particles/particles.min.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="./js/dark-mode-switch.js"></script>
+</body>
+
+</html>

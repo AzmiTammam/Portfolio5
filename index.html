@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azmi Portfolio">
+    <title>Azmi</title>
+    <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="17x17">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.documentElement.setAttribute("data-theme", "light");
+
+            // Get our button switcher
+            var themeSwitcher = document.getElementById("theme-switcher");
+
+            // When our button gets clicked
+            themeSwitcher.onclick = function () {
+                // Get the current selected theme, on the first run
+                // it should be `light`
+                var currentTheme = document.documentElement.getAttribute("data-theme");
+
+                // Switch between `dark` and `light`
+                var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+                // Set our currenet theme to the new one
+                document.documentElement.setAttribute("data-theme", switchToTheme);
+            }
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <div id="particles-js"></div>
+    <div class="overlay"></div>
+    <div id="preloader"></div>
+
+    <!-- Preloader Start -->
+
+
+
+    <!-- Preloader end -->
+
+    <header class="animate__animated animate__jackInTheBox">
+        <div class="container">
+            <a id="button"></a>
+
+            <!-- Navbar -->
+
+            <nav class="navbar">
+
+                <a href="#" class="logo"><span>Azmi</span> Tammam</a>
+                <br>
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="." class="nav-links">About</a>
+                    </li>
+                    <li>
+                        <a href="./#resume" data-page="resume" class="nav-links">Resume</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="nav-links">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:azmitammam@gmail.com" data-page="contact" class="nav-links">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" data-page="contact" class="nav-links" id="theme-switcher">DarkMode</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- End Navbar -->
+
+
+            <div class="row">
+                <div class="col-lg-1 d-block">
+                    <ul class="social">
+                        <li>
+                            <a href="#" target="_blank" class="facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/AzmiTammam" target="_blank" class="google">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Azzmmii" target="_blank" class="twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/azzmmii/" target="_blank" class="linkedin">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="person-info">
+
+                        <img src="./images/img.jpg" alt="Person image" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="person-details">
+                        <p class="text-left job">Frontend Developer</p>
+                        <h1 class="text-left">Azmi Tammam</h1>
+                        <p class="text-left info">
+                            Versatile Front-End Developer with 1+ years of
+                            experience implementing complex web pages
+                            and internal frameworks, I am always learning
+                            more to enrich my skills.
+
+                        </p>
+                        <a href="./files/Azmi-Al-Tammam-CV.pdf" target="_blank">
+
+                            <input type="button" class="btn custom-btn-person active" value="Download CV">
+                        </a>
+
+                        <a href="mailto:azmitammam@gmail.com">
+                            <input type="button" class="btn custom-btn-person btn-contact" value="Contact">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="work">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="heading-custom">What I Do</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-3" style="max-height: 520px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 text-center" style="max-width: 90px;">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web Design</h5>
+                                        <p class="card-text"><small class="text-muted">I can design modern and
+                                                responsive web pages with the best and latest technologies available to
+                                                attract all your customers.</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 520px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 text-center" style="max-width: 90px;">
+                                    <i class="far fa-object-group"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UI / UX</h5>
+                                        <p class="card-text"><small class="text-muted">I can create consistent web pages
+                                                design, taking into account the user experience in order to be easy to
+                                                access and use and to reflect the image of the owner.</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-3" style="max-width: 520px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 text-center" style="max-width: 90px;">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Web Developer</h5>
+                                        <p class="card-text"><small class="text-muted">I create responsive and modern
+                                                web pages using the latest technologies and of course using HTML5, CSS3,
+                                                SASS Bootstrap as well as Javascript and npm.</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 520px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 text-center" style="max-width: 90px;">
+                                    <i class="fas fa-ad"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Marketing</h5>
+                                        <p class="card-text"><small class="text-muted">I can market products, and I can
+                                                also target people who are interested in the product and certainly make
+                                                great landing pages for it and analyze the competitors market.</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="container">
+                <div class="resume-heading">
+                    <h1 class="heading-custom">Resume</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="edu-header">
+                            <img loading="lazy" alt="icon for resume" class="icon"
+                                src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTEuOTcgNTExLjk3IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMS45NyA1MTEuOTciIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTUwMi4wOTEgMTU3LjEwNS0xMDguMDc1LTM2LjUyNWMtMy45MjMtMS4zMi04LjE4Ljc4LTkuNTA3IDQuNzA0LTEuMzI2IDMuOTI0Ljc4IDguMTgxIDQuNzA0IDkuNTA3bDEwNy4wNDMgMzYuMTc3LTUwLjM4NyAyNC41NjVjLTIuMDkyLTEuNDExLTQuNDQtMi40OTQtNi45ODYtMy4xNTlsLTE1MS4xMzUtMzkuNDk5Yy00LjgwNC0yNC43MTUtMzUuMjM0LTM1LjA4OC01My45MjUtMTcuNDk5LTYuNDY5IDYuMDg4LTEwLjE3OSAxNC42NzMtMTAuMTc5IDIzLjU1NHYuMTY0Yy4wNTMgMTAuNDU3IDguNzA4IDE4Ljk2NCAxOS4yOTUgMTguOTY0aDI2LjA5NGM2LjczOCAwIDEzLjQ3Ny0zLjUxNiAxNi45NzItMTAuMTM1bDE0MC45NDMgMzYuODM2Yy00NC41MzQgMjEuNzEyLTE0NC41MDggNzAuNDUzLTE1Ny4yNTIgNzYuNjY3LTguOTk2IDQuMzg1LTE5LjAxOSA0LjA5Ny0yNy40MjIgMGwtMjI2LjU2MS0xMTAuNDU4IDIzMC4yNTQtNzcuODE4YzYuNDU5LTIuMTg0IDEzLjU3Ni0yLjE4NCAyMC4wMzUgMGw4OS44OTcgMzAuMzgzYzMuOTI1IDEuMzI1IDguMTgtLjc3OCA5LjUwNy00LjcwNCAxLjMyNi0zLjkyNC0uNzgtOC4xODEtNC43MDQtOS41MDdsLTg5Ljg5Ny0zMC4zODNjLTkuNTU4LTMuMjI5LTIwLjA4My0zLjIyOS0yOS42NDEgMGwtMjMxLjI4NiA3OC4xNjZjLTEyLjI4OCA0LjE1Ni0xMy4zOTcgMjEuMTc1LTEuNzE4IDI2Ljg2OGwxMTguNjk4IDU3Ljg3Yy02LjUzIDMxLjA0NS0xNi41IDY0LjQ2OC0yNy4zMzYgOTQuMTM0LTQuNDM2IDEyLjEzMi0uNjE0IDI1LjYyOCA5LjUwOCAzMy41ODQgMzQuMjU1IDI2LjkyMyA3NC43MjkgNDcuNzIxIDExNi4yMTIgNjEuMDkgMTkuNDk0IDYuMjgxIDQxLjIzMSA2LjUyMyA2MS40ODEgMCA0MS40OTYtMTMuMzc1IDgxLjk3NC0zNC4xODEgMTE2LjIxMS02MS4wOSAxMC4xNTktNy45ODcgMTMuOTI5LTIxLjQ4OSA5LjUwOC0zMy41ODQtMTAuNjA3LTI5LjAwOC0yMC43MTMtNjIuNjQ5LTI3LjMzNS05NC4xMzFsNTUuODM0LTI3LjIyMXYxMTIuODhjLTkuNTQzLjczMS0xNy4wODkgOC43MTItMTcuMDg5IDE4LjQzOXYyMS44NTZjMCAzLjI0NyAxLjQxIDYuMTY0IDMuNjQgOC4xOTZsLTIuNzg2IDQyLjEyMmMtLjU0NCA4LjIyOSA1Ljk5OSAxNS4yMjMgMTQuMjQ5IDE1LjIyM2gxOC45NzRjOC4yNDYgMCAxNC43OTItNi45OTEgMTQuMjQ4LTE1LjIyM2wtMi43ODUtNDIuMTIyYzIuMjMtMi4wMzIgMy42NC00Ljk0OCAzLjY0LTguMTk2di0yMS44NTdjMC05LjcyNy03LjU0Ny0xNy43MDgtMTcuMDktMTguNDM5di0xMTMuMDQyYzAtMi4zMDUtLjM2My00LjUzOC0xLjAxMS02LjY1OGw0OC44NzgtMjMuODNjMTEuNjY0LTUuNjg3IDEwLjU5LTIyLjcwNy0xLjcxOC0yNi44Njl6bS0yMzMuMDU4IDUuOTUzaC0yNi4wOTRjLTIuMzE3IDAtNC4yODQtMS44NS00LjI5NS00LjAwMnYtLjEyNmMwLTQuODMyIDEuOTM4LTkuMzE3IDUuNDU5LTEyLjYzMSAxMC44MDEtMTAuMTY1IDI4LjUwMS0yLjg0OCAyOS4yMDIgMTEuNzcyLjE2NyAzLjUwMS0yLjA4NyA0Ljk4Ny00LjI3MiA0Ljk4N3ptMTIwLjg3NyAxNTMuNjM5Yy00MC41MjIgMzEuNzE0LTk4LjAyOCA1NC40MDEtMTE3LjgzNiA1OC4xNzctNC4wNjkuNzc2LTYuNzM4IDQuNzA0LTUuOTYyIDguNzcyLjc3NiA0LjA3IDQuNzE1IDYuNzM5IDguNzcyIDUuOTYyIDIwLjcxOS0zLjk1MSA3Ny40ODYtMjYuMDEyIDEyMC4xMDEtNTcuOTAzIDEuMDQ4IDIuOTg5IDIuMjYyIDYuMzkyIDMuMzY5IDkuNDIxIDIuMiA2LjAyLjMxNSAxMi43MDYtNC42ODkgMTYuNjQxLTQwLjM5IDMxLjc0My04Mi45NTEgNDkuMzkxLTExMS41NDMgNTguNjA0LTE3LjA3OCA1LjUwNS0zNS42MjcgNS4zNjktNTIuMjc5IDAtMjguNTkyLTkuMjE0LTcxLjE1My0yNi44NjEtMTExLjU0My01OC42MDQtNS4wMDMtMy45MzMtNi44OTEtMTAuNjE4LTQuNjg4LTE2LjY0Mi4wNDQtLjEyLjA4Ny0uMjQyLjEzMS0uMzYyIDEuMDktMi45ODYgMi4yOTgtNi4zNzUgMy4yMzctOS4wNiA0MS42MDggMzEuMTI4IDk4LjIyIDUzLjczNSAxMjAuMDk0IDU3LjkwOCA0LjA3NC43NzQgNy45OTctMS44OTMgOC43NzMtNS45NjEuNzc2LTQuMDY5LTEuODkzLTcuOTk3LTUuOTYxLTguNzczLTE4LjctMy41NjUtNzYuNDAzLTI1Ljc3Mi0xMTcuODMxLTU4LjE4MSA2LjA5MS0xOC42MjcgMTMuMTQ5LTQyLjU2NSAxOC42OTctNjguMDc5bDk0Ljk0OCA0Ni4yOWMxMi42NDIgNi4xNjQgMjcuNDM0IDYuNDA1IDQwLjU3IDBsOTQuOTQyLTQ2LjI4OGM1LjU0OCAyNS41MTMgMTIuNjA2IDQ5LjQ1MSAxOC42OTggNjguMDc4em00OS44MTMgMTAxLjY0MyAyLjYwOS0zOS40MzloMTIuMjE4bDIuNjA4IDM5LjQzOXptMTguMzA4LTcyLjM5OHYxNy45NThoLTE5LjE3OXYtMTcuOTU4YzAtMS45MDMgMS42MDctMy41MTEgMy41MTEtMy41MTFoMTIuMTU2YzEuOTAzLjAwMSAzLjUxMiAxLjYwOCAzLjUxMiAzLjUxMXoiLz48L2c+PC9zdmc+" />
+                            <h2>Education</h2>
+                        </div>
+                        <div class="edu-body">
+                            <span class="year">2019 - 2023</span>
+                            <p class="name">Jadara University</p>
+                            <h5 class="desc">
+                                Software engineer
+                            </h5>
+                            <p class="text">
+                                Software engineering is defined as a process of analyzing user requirements and then
+                                designing, building, and testing software application which will satisfy those
+                                requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 exp-custom-top-sm">
+                        <div class="exp-header">
+                            <img loading="lazy" alt="icon for resume" class="icon"
+                                src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC0zMSA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00OTcuMDkzNzUgNjAuMDAzOTA2Yy0uMDMxMjUgMC0uMDYyNS0uMDAzOTA2LS4wOTM3NS0uMDAzOTA2aC0xMzZ2LTE1YzAtMjQuODEyNS0yMC4xODc1LTQ1LTQ1LTQ1aC0xMjBjLTI0LjgxMjUgMC00NSAyMC4xODc1LTQ1IDQ1djE1aC0xMzZjLTguMzUxNTYyIDAtMTUgNi44NDM3NS0xNSAxNXYzMzBjMCAyNC44MTI1IDIwLjE4NzUgNDUgNDUgNDVoNDIyYzI0LjgxMjUgMCA0NS0yMC4xODc1IDQ1LTQ1di0zMjkuNjgzNTk0YzAtLjAxOTUzMSAwLS4wMzkwNjIgMC0uMDU4NTk0LS41NzQyMTktOS44NTE1NjItNi42MzI4MTItMTUuMTk5MjE4LTE0LjkwNjI1LTE1LjI1MzkwNnptLTMxNi4wOTM3NS0xNS4wMDM5MDZjMC04LjI2OTUzMSA2LjczMDQ2OS0xNSAxNS0xNWgxMjBjOC4yNjk1MzEgMCAxNSA2LjczMDQ2OSAxNSAxNXYxNWgtMTUwem0yOTUuMTg3NSA0NS00Ni41ODIwMzEgMTM5Ljc0MjE4OGMtMi4wNDI5NjkgNi4xMzY3MTgtNy43NjE3MTkgMTAuMjU3ODEyLTE0LjIyNjU2MyAxMC4yNTc4MTJoLTg0LjM3ODkwNnYtMTVjMC04LjI4NTE1Ni02LjcxNDg0NC0xNS0xNS0xNWgtMTIwYy04LjI4NTE1NiAwLTE1IDYuNzE0ODQ0LTE1IDE1djE1aC04NC4zNzg5MDZjLTYuNDY0ODQ0IDAtMTIuMTgzNTk0LTQuMTIxMDk0LTE0LjIyNjU2My0xMC4yNTc4MTJsLTQ2LjU4MjAzMS0xMzkuNzQyMTg4em0tMTc1LjE4NzUgMTUwdjMwaC05MHYtMzB6bTE4MSAxNjVjMCA4LjI2OTUzMS02LjczMDQ2OSAxNS0xNSAxNWgtNDIyYy04LjI2OTUzMSAwLTE1LTYuNzMwNDY5LTE1LTE1di0yMzcuNTY2NDA2bDIzLjkzMzU5NCA3MS43OTY4NzVjNi4xMzI4MTIgMTguNDA2MjUgMjMuMjg5MDYyIDMwLjc2OTUzMSA0Mi42ODc1IDMwLjc2OTUzMWg4NC4zNzg5MDZ2MTVjMCA4LjI4NTE1NiA2LjcxNDg0NCAxNSAxNSAxNWgxMjBjOC4yODUxNTYgMCAxNS02LjcxNDg0NCAxNS0xNXYtMTVoODQuMzc4OTA2YzE5LjM5ODQzOCAwIDM2LjU1NDY4OC0xMi4zNjMyODEgNDIuNjg3NS0zMC43Njk1MzFsMjMuOTMzNTk0LTcxLjc5Njg3NXptMCAwIi8+PC9zdmc+" />
+                            <h2>Experience</h2>
+                        </div>
+                        <div class="exp-body">
+                            <span class="year">2018 - Current</span>
+                            <p class="name">Frontend Developer</p>
+                            <h5 class="desc">
+                                Freelancer
+                            </h5>
+                            <p class="text">
+                                I work as a freelancer in many sites, I have created a lot of different projects for
+                                many clients and I have a great and wonderful experience in this field.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cert">
+            <div class="container certificates">
+                <h1 class="text-left heading-custom">
+                    Certificates
+                </h1>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <a href="https://udacity.com/" target="_blank">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4 udacity">
+                                        <img loading="lazy" src="./images/udacity.png" alt="Certificate photo">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Full-Stack Development</h6>
+                                            <p class="card-text"><small class="text-muted">Issuing organization:
+                                                    <b>Udacity</b> <br>
+                                                    May 2021</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.freecodecamp.org/" target="_blank">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img loading="lazy" src="./images/freecodecamp.jpg" width="180px"
+                                            alt="Certificate photo">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Responsive Web Design</h6>
+                                            <p class="card-text"><small class="text-muted">Issuing organization:
+                                                    <b>freeCodeCamp</b> <br>
+                                                    May 2021</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <a href="https://www.hsoub.com/en/" target="_blank">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img loading="lazy" src="./images/hsoub.png" width="180px" alt="Certificate">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Front-End Web Development</h6>
+                                            <p class="card-text"><small class="text-muted">Issuing organization:
+                                                    <b>Hsoub</b> <br>
+                                                    March 2021</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.hsoub.com/en/" target="_blank">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img loading="lazy" src="./images/hsoub.png" width="180px" alt="Certificate">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">JavaScript Application Development</h6>
+                                            <p class="card-text"><small class="text-muted">Issuing organization:
+                                                    <b>Hsoub</b> <br>
+                                                    July 2021</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill">
+            <div class="container">
+                <h1 class="heading-custom">
+                    Skills
+                </h1>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="skill-body">
+
+                            <div class="flex-wrapper">
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                        <path class="circle-bg" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="20.35" class="percentage">90%
+                                            <h3 class="skill-name">HTML5</h3>
+                                        </text>
+                                    </svg>
+                                </div>
+
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart green">
+                                        <path class="circle-bg" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="20.35" class="percentage">80%
+                                            <h3 class="skill-name">CSS3</h3>
+                                        </text>
+                                    </svg>
+                                </div>
+
+                            </div>
+
+                            <h6>Arabic</h6>
+
+                            <div class="progress">
+                                <div class="bar" style="width:100%">
+                                    <p class="percent">99%</p>
+                                </div>
+                            </div>
+
+                            <h6>English</h6>
+                            <div class="progress">
+                                <div class="bar" style="width:85%">
+                                    <p class="percent">85%</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="skill-body">
+                            <div class="flex-wrapper">
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                        <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="20.35" class="percentage">75%
+                                            <h3 class="skill-name">JavaScript</h3>
+                                        </text>
+                                    </svg>
+                                </div>
+
+                                <div class="single-chart">
+                                    <svg viewBox="0 0 36 36" class="circular-chart red">
+                                        <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text x="18" y="20.35" class="percentage">75%
+
+                                            <h3 class="skill-name">React</h3>
+                                        </text>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <h6>React Native</h6>
+                            <div class="progress">
+                                <div class="bar" style="width:78%">
+                                    <p class="percent">75%</p>
+                                </div>
+                            </div>
+
+                            <h6>Node.js</h6>
+                            <div class="progress">
+                                <div class="bar" style="width:65%">
+                                    <p class="percent">65%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="https://twitter.com/Azzmmii" rel="noreferrer" alt="link for social" target="_blank">
+                            <input type="button" class="btn" value="Twitter">
+                        </a>
+                        <a href="https://www.linkedin.com/in/azzmmii/" rel="noreferrer" atalt="link for social"
+                            target="_blank">
+                            <input type="button" class="btn" value="Linkedin">
+                        </a>
+                        <a href="https://github.com/AzmiTammam" rel="noreferrer" alt talt="link for social"
+                            target="_blank">
+                            <input type="button" class="btn" value="Github">
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <p class="text-right">© 2021 all rights reserved. Created by <a
+                                href="https://twitter.com/azzmmii">Azmi Tammam</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </header>
+
+
+
+
+
+
+
+    <script src="./assest/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/695389b5b3.js" crossorigin="anonymous"></script>
+    <script src="./assest/particles/particles.min.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="./js/dark-mode-switch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+[data-theme="dark"] header {
+  background-color: #222 !important;
+  color: rgb(196, 196, 196) !important;
+}
+
+[data-theme="dark"] body {
+  background-color: #222 !important;
+  color: rgb(196, 196, 196) !important;
+}
+
+
+
+[data-theme="dark"] {
+  color: rgb(196, 196, 196) !important;
+}
+
+[data-theme="dark"] header .person-info img {
+  border-color: rgb(77, 77, 77) !important;
+}
+
+[data-theme="dark"] header .person-details p.job {
+  color: rgb(138, 138, 138) !important;
+}
+
+[data-theme="dark"] header .person-details h1 {
+  color: rgb(141, 141, 141) !important;
+}
+
+[data-theme="dark"] header .person-details .custom-btn-person {
+  background-color: rgb(37, 37, 37);
+  border: #575757 2px solid;
+  color: rgb(155, 155, 155) !important;
+}
+
+[data-theme="dark"] header ul.social li a i {
+  color: rgb(207, 207, 207) !important;
+  background-color: #525252;
+}
+
+[data-theme="dark"] header section.work .card i {
+  color: rgb(141, 141, 141) !important;
+}
+
+[data-theme="dark"] header section.work .card-body,header section.work .card {
+  color: rgb(219, 219, 219) !important;
+  background-color: rgba(51, 51, 51, 0);
+}
+
+[data-theme="dark"] header section {
+  border-top: 2px solid #2c2c2c !important;
+}
+
+[data-theme="dark"] header section .edu-body span.year,
+header section .exp-body span.year {
+  color: rgb(175, 175, 175) !important;
+  border: 2px solid #535353;
+}
+
+[data-theme="dark"] header section .edu-body p.text,
+header section .exp-body p.text {
+  color: rgb(153, 153, 153) !important;
+}
+
+[data-theme="dark"] header .heading-custom {
+  color: rgb(179, 179, 179) !important;
+}
+
+[data-theme="dark"] header .heading-custom::after {
+  color: rgb(82, 82, 82) !important;
+}
+
+[data-theme="dark"] header section.cert .certificates .card {
+  color: rgb(197, 197, 197) !important;
+  background-color: rgba(54, 54, 54, 0.842);
+}
+
+[data-theme="dark"] header .circle-bg {
+  stroke: rgb(68, 67, 67) !important;
+}
+
+[data-theme="dark"] header .progress {
+  background: rgba(107, 107, 107, 0.918) !important;
+}
+
+[data-theme="dark"] header .bar {
+  background: rgba(53, 53, 53, 0.925) !important;
+}
+
+[data-theme="dark"] header section.footer input {
+  color: rgb(112, 112, 112) !important;
+}
+
+[data-theme="dark"] header .logo {
+  color: rgb(189, 189, 189) !important;
+}
+
+[data-theme="dark"] nav.navbar .main-nav li a {
+  color: rgb(145, 145, 145) !important;
+}
+
+[data-theme="dark"] header .udacity img {
+  background-color: rgb(231, 231, 231) !important;
+}

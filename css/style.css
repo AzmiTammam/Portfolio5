@@ -1,0 +1,1011 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap');
+
+.animate__animated.animate__jackInTheBox {
+    --animate-duration: 2.4s;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+img {
+    float: center !important;
+}
+
+#particles-js {
+    background-color: #4568e9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+
+header {
+    z-index: 1;
+    background-color: #fff;
+    margin: 3% auto;
+    padding: 40px 70px 5px;
+    border-radius: 40px;
+    box-shadow: 0 0 40px -10px rgb(0 0 0 / 20%);
+    width: 1240px;
+    height: 100%;
+    position: relative;
+}
+
+/* Scroll to top */
+
+#button {
+    display: inline-block;
+    background-color: #373a47be;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 65px;
+    right: 65px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4em;
+    line-height: 35px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #78797ed2;
+    text-decoration: none;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* End scroll to top */
+
+header .person-info img {
+    margin-top: 60px;
+    vertical-align: middle;
+    border: #dddddd 10px solid;
+    box-shadow: 0 0 40px -10px rgb(0 0 0 / 20%);
+    border-radius: 49%;
+    pointer-events: none;
+    margin-left: 80px;
+    width: 330px;
+    height: 330px;
+    max-width: 330px;
+    max-height: 330px;
+}
+
+header .person-info {
+    position: relative;
+}
+
+header .person-details {
+    padding-top: 70px;
+    padding-bottom: 75px !important;
+    padding-left: 0px;
+}
+
+header .person-details p.job {
+    margin-top: 50px;
+    color: #666;
+    font-weight: 300;
+}
+
+header .person-details h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+header .person-details p.info {
+    color: #666;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+header .person-details .custom-btn-person {
+    box-shadow: 0 0 50px -10px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border: #007ced 2px solid;
+    margin-right: 7px;
+    color: #333;
+    border-radius: 20px;
+    padding: 7px 30px;
+    margin-top: 10px;
+}
+
+header .person-details .custom-btn-person a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+header .person-details .custom-btn-person a:hover {
+    color: #fff !important;
+}
+
+header .person-details .custom-btn-person:hover,
+header .person-details .custom-btn-person:focus {
+    background-color: #007ced;
+    color: #fff !important;
+    transition: all .5s ease;
+}
+
+header .person-details .btn-contact {
+    border-color: rgb(131, 131, 131) !important;
+}
+
+header .person-details .btn-contact:hover {
+    border-color: rgb(131, 131, 131) !important;
+    background-color: rgb(131, 131, 131) !important;
+}
+
+
+header ul.social {
+    margin-top: 130px !important;
+}
+
+header ul.social li {
+    margin-bottom: 10px;
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+}
+
+header ul.social li a i {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: #0575e6;
+    color: #fff;
+    transition: all .5s ease;
+
+
+}
+
+header ul.social li a i:hover {
+    background-color: rgba(255, 255, 255, 0.664);
+    color: #0080ff;
+}
+
+
+
+/* ----------------------------------------- Work Section --------------------------------------------- */
+
+header section.work .card i {
+    margin-top: 15px;
+    font-size: 40px;
+    color: #4568e9;
+}
+
+header section.work .card-body {
+    padding: 10px 5px;
+}
+
+header section.work .card {
+    border: 0px;
+}
+
+/* ----------------------------------------- Resume Section ------------------------------------------- */
+
+header section {
+    border-top: 2px solid #f2f2f2;
+}
+
+header section h1 {
+    padding: 20px 0 30px;
+}
+
+header section .edu-header .icon,
+header section .exp-header .icon {
+    max-width: 35px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+header section .edu-header h2,
+header section .exp-header h2 {
+    display: inline-block;
+    font-size: 27px;
+}
+
+header section .edu-body,
+header section .exp-body {
+
+    margin-bottom: 20px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+header section .edu-body span.year,
+header section .exp-body span.year {
+    display: inline-flex;
+    margin-top: 20px;
+    border: 2px solid #4568e9;
+    padding: 0px 15px;
+    border-radius: 80px;
+    margin-right: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+
+header section .edu-body p.name,
+header section .exp-body p.name {
+    display: inline-block;
+    font-size: 14px;
+}
+
+header section .edu-body h5.desc,
+header section .exp-body h5.desc {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header section .edu-body p.text,
+header section .exp-body p.text {
+    color: #666;
+    font-size: 15px;
+}
+
+header section.cert {
+    padding: 40px 0 50px;
+}
+
+header section.cert img {
+    width: 180px;
+    height: 100px;
+
+}
+
+header section.cert .certificates .card {
+    max-height: 102px;
+    max-width: 650px !important;
+}
+
+header .heading-custom {
+    display: block;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 27px;
+}
+
+header .heading-custom::after {
+    content: " ";
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    display: table-cell;
+    width: 60px;
+    color: #4568e9;
+    padding-top: 5px;
+}
+
+header section.cert .certificates a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: top .3s ease;
+    top: 0;
+}
+
+header section.cert .certificates .card .card-body h5 {
+    margin-bottom: 7px;
+}
+
+header section.cert .certificates a:hover {
+    top: -7px;
+}
+
+header section.cert .certificates a .card:hover {
+    -webkit-box-shadow: 1px 8px 13px -1px rgba(0, 0, 0, 0.23);
+    box-shadow: 1px 8px 13px -1px rgba(0, 0, 0, 0.23);
+}
+
+header section.skill {
+    padding: 40px 0 50px;
+}
+
+header section.skill h1.heading {
+    font-size: 32px;
+    color: #333;
+}
+
+header section.skill .skill-body h3 {
+    display: inline-block;
+    margin-left: 60px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/*  */
+
+
+.flex-wrapper {
+    display: block;
+    flex-flow: row nowrap;
+    margin-top: 45px;
+}
+
+.single-chart {
+    width: 35%;
+    justify-content: space-around;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+    stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.circular-chart.red .circle {
+    stroke: #c00000;
+}
+
+
+/* bar lang */
+
+header section.skill .skill-body h6 {
+    margin-top: 50px;
+    font-size: 18px;
+    margin-left: 30px;
+    border-left: #4568e9 2px;
+}
+
+.percentage {
+    fill: #666;
+    font-size: 7px;
+    text-anchor: middle;
+}
+
+.progress {
+    margin: 20px auto;
+    padding: 0;
+    width: 90%;
+    height: 17px;
+    overflow: hidden;
+    background: #d3d3d3d8;
+    border-radius: 15px;
+}
+
+.bar {
+    position: relative;
+    float: left;
+    min-width: 1%;
+    height: 100%;
+    background: #4568e9;
+}
+
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 12.5px;
+    color: rgb(224, 224, 224);
+}
+
+header section.footer input {
+    font-size: 14px;
+    margin-top: 5px !important;
+}
+
+header section.footer p {
+    text-align: end !important;
+    font-size: 15px;
+    margin-top: 15px !important;
+}
+
+
+.custom-switch {
+    padding-left: 0rem !important;
+    background-color: transparent !important;
+    background: transparent;
+    border: 0;
+}
+
+/*  */
+
+
+@media (max-width: 1270px) {
+    header {
+        margin: 0% auto;
+        padding: 40px 80px 5px;
+        border-radius: 0px;
+        width: 100% !important;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width:1199px) {
+    header section.cert .certificates .card {
+        height: 120px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: 10px;
+        left: 40px;
+
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        line-height: 15px
+    }
+}
+
+@media (max-width:1049px) {
+    header section.cert .certificates .card {
+        height: 120px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        line-height: 15px
+    }
+}
+
+@media (max-width: 991px){
+    header section.cert .certificates .card {
+        height: 120px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: -90px;
+        left: 0px !important;
+        font-size: 15px;
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: -53px;
+        left: 0px !important;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        margin: 0% auto;
+        padding: 40px 70px 5px;
+        border-radius: 0px;
+        width: 100% !important;
+        height: 100%;
+        position: relative;
+    }
+
+    header ul.social {
+        display: none;
+    }
+
+    header .person-info img {
+        margin-top: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        width: 300px;
+        height: 300px;
+    }
+
+    header section.cert img {
+        width: 200px;
+        height: 100px;
+    }
+
+    header section.cert .certificates .card {
+        max-height: 102px;
+        max-width: 650px !important;
+    }
+
+    header section.cert .certificates .card .card-body {
+        padding: 15px 20px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: 10px;
+        left: 75px;
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: 49px;
+        left: 75px;
+    }
+
+    header .person-details p.job {
+        margin-top: 0px;
+        text-align: center !important;
+    }
+
+    header .person-details h1 {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center !important;
+    }
+
+    header .person-details p.info {
+        text-align: center !important;
+    }
+
+    header .person-details .custom-btn-person {
+        border-radius: 20px;
+        padding: 7px 30px;
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        text-decoration: none !important;
+    }
+
+    #button {
+        opacity: 0 !important;
+    }
+
+    header .project {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header section.cert img {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: 10px;
+        left: 15px !important;
+        font-size: 15px;
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: 55px !important;
+        left: 15px !important;
+    }
+
+    #button {
+        opacity: 0 !important;
+    }
+}
+
+@media (max-width:767px) {
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: -100px !important;
+        left: 215px !important;
+        font-size: 14px;
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: -65px !important;
+        left: 215px !important;
+        font-size: 17px;
+        line-height: 15px
+    }
+}
+
+@media (max-width: 576px) {
+
+    header .person-info img {
+        margin-top: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    header .person-details p.job {
+        margin-top: 0px;
+    }
+
+    header .person-details h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    header .person-details p.info {
+        margin-top: 0;
+    }
+
+    header .person-details {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    header section.resume .exp-custom-top-sm {
+        margin-top: 250px !important;
+    }
+
+    header section.cert img {
+        width: 150px;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+
+    header section.cert .certificates .card {
+        height: 120px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: -90px !important;
+        left: 165px !important;
+        font-size: 13px;
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: -53px !important;
+        left: 165px !important;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 487px) {
+    header section.cert .certificates .card {
+        height: 120px;
+        max-width: 310px !important;
+        min-width: 310px !important;
+        position: relative;
+        right: 40px;
+    }
+
+    header section.cert .certificates .card .card-body h6 {
+        position: absolute;
+        top: -90px;
+        left: 165px;
+        font-size: 12px;
+    }
+
+    header section.cert .certificates .card .card-body p {
+        position: absolute;
+        top: -53px;
+        left: 165px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    header .person-info img {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        right: 20px;
+    }
+
+    header .person-details h1 {
+        font-size: 26px;
+        line-height: 30px;
+        display: block !important;
+    }
+
+    nav.navbar .main-nav {
+        display: flex;
+        margin-right: -0px !important;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav.navbar .navbar-toggle {
+        position: relative;
+        top: 15px !important;
+        right: -60px !important;
+    }
+
+    nav.navbar .logo {
+        margin-top: 0;
+        font-size: 22px !important;
+        text-align: left !important;
+        text-decoration: none;
+    }
+
+    nav.navbar a {
+        text-decoration: none;
+    }
+
+    nav.navbar a:hover {
+        color: #666 !important;
+    }
+
+    nav.navbar ul li {
+        position: relative;
+        right: -50px !important;
+    }
+
+}
+
+/* Navbar */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    font-size: 15px;
+}
+
+nav.navbar .main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+nav.navbar .nav-links,
+.logo {
+    text-decoration: none;
+    color: #000;
+}
+
+nav.navbar .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+nav.navbar .main-nav li a {
+    color: #666;
+    font-size: 15px;
+    padding: 13px 0 13px 0;
+}
+
+nav.navbar .logo {
+    display: inline-block;
+    font-size: 26px;
+    margin: 0;
+}
+
+nav.navbar .logo span {
+    font-weight: 700;
+}
+
+nav.navbar .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #666;
+    font-size: 17px;
+}
+
+nav.navbar .active {
+    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    nav.navbar .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav.navbar .main-nav li {
+        margin: 0;
+    }
+
+    nav.navbar .nav-links {
+        margin-left: 20px;
+    }
+
+    nav.navbar .logo {
+        margin-top: 0;
+    }
+
+    nav.navbar .navbar-toggle {
+        display: none;
+    }
+
+    nav.navbar .logo:hover,
+    nav.navbar .nav-links:hover {
+        color: #222;
+        text-decoration: none;
+    }
+}
+
+
+/* End Navbar */
+
+
+/* PreLoader Start */
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    background: #333;
+}
+
+#preloader:before {
+    content: '';
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 4px solid #424242;
+    border-top-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* PreLoader End */
+
+header .project {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+header .project img {
+    margin-bottom: 15px !important;
+    border-radius: 11px;
+}
+
+
+.project img {
+    transition-duration: 0.5s;
+    margin: 0 auto;
+    display: block;
+}
+
+.project img:hover {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    z-index: 0;
+}
+
+/* Stop Animated in mobile devices */
+
+@media only screen and (max-width : 768px) {
+	.animate__animated.animate__jackInTheBox {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+
+/* Stop Animated in mobile devices */
